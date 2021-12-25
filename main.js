@@ -7,7 +7,7 @@ quotes=[
 '#65: Above all else, be true to you.',
 '#66: Allow adversity to be your teacher.',
 '#67: Find people who believe in you until you can believe in yourself.',
-'#69: We open learn too late that we spent too much time worrying about the things that mattered least.',
+'#69: We often learn too late that we spent too much time worrying about the things that mattered least.',
 '#72: Abundance flows more freely to you when it continues to %ow outward from you, as you pass it on.',
 '#73: Don\'t let your fear of the hazards keep your ship in the harbor. Cast off your lines and sail away!'
 ];
@@ -27,10 +27,18 @@ const factChecker = () =>
     }
 
 }
+const randomQuote = () => 
+{
+    let num = Math.floor(Math.random()*quotes.length);
+    return quotes[num];
+
+}
 
 const Main = () => {
-    `The statement: \n  ${}  \nl`
+    
+   // `The statement: \n ${}  \n`
     console.log(`Our fact checkers have concluded that this statement is ${factChecker()}`);
 }
- Main();
+//Main();
 
+console.log(randomQuote())
