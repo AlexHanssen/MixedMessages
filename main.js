@@ -35,10 +35,8 @@ const randomQuote = () =>
 }
 
 const Main = () => {
-    
-   // `The statement: \n ${}  \n`
-    console.log(`Our fact checkers have concluded that this statement is ${factChecker()}`);
-}
-//Main();
+    return (`The saying "${randomQuote()}" has been determined by our experts to be ${factChecker()}`)
 
-console.log(randomQuote())
+}
+console.log(Main());
+
