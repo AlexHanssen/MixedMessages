@@ -8,7 +8,7 @@ quotes=[
 '#66: Allow adversity to be your teacher.',
 '#67: Find people who believe in you until you can believe in yourself.',
 '#69: We often learn too late that we spent too much time worrying about the things that mattered least.',
-'#72: Abundance flows more freely to you when it continues to %ow outward from you, as you pass it on.',
+'#72: Abundance flows more freely to you when it continues to flow outward from you, as you pass it on.',
 '#73: Don\'t let your fear of the hazards keep your ship in the harbor. Cast off your lines and sail away!'
 ];
 quotes = quotes.map( e => {return e.slice(5)});
@@ -17,11 +17,11 @@ const factChecker = () =>
 {
     let choice = Math.floor(Math.random()*3);
     switch (choice){
-        case 0: {return 'correct'}
+        case 0: {return 'Correct'}
         break;
-        case 1: {return 'ncorrect'}
+        case 1: {return 'Incorrect'}
         break;
-        case 2: {return 'partly true'}
+        case 2: {return 'Partly True'}
         break;
 
     }
@@ -34,9 +34,8 @@ const randomQuote = () =>
 
 }
 
-const Main = () => {
-    return (`The saying "${randomQuote()}" has been determined by our experts to be ${factChecker()}`)
+const Main = () => {    document.write(`The saying "${randomQuote()}" has been determined by our experts to be ${factChecker()}`)
 
 }
-console.log(Main());
+
 
